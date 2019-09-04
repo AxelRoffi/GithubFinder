@@ -1,14 +1,19 @@
 import React, { Component } from "react";
 import Navbar from "./components/layout/Navbar.js";
-import UserItem from "./components/users/UserItem.js";
+import Users from "./components/users/Users.js";
 import "./App.css";
 
-class App extends React.Component {
+class App extends Component {
+  componentDidMount(){
+    
+  }
   render() {
     return (
       <div>
         <Navbar />
-        <UserItem />
+        <div className='container'>
+          <Users />
+        </div>
       </div>
     );
   }
